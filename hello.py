@@ -1,6 +1,18 @@
-#Ask for name
-name = input ("What's your name? ")
+#Ask for name, strip, and title
+name = input ("What's your name? ").strip().title()
 
-#print "Hello" to user
-print ("hello,")
-print (name)
+#Say "Hello" to user
+#print ("hello," + " " + name)
+#-
+#print ("hello,", name)
+#-
+#print ("hello, ", end="")
+#print(name)
+#-
+print (f"hello, {name}")
+
+
+#Cornercase: quotes in quotes
+#print ("hello, \"friend\"")
+#-
+#print ("hello, 'friend'")
